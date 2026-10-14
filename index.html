@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8d7c9">
+  <title>For My Favorite Person ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="petal-field" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <p class="eyebrow">A LITTLE BOOK FULL OF LOVE</p>
+    <h1>For your special day<span> ♡</span></h1>
+    <p class="intro">A tiny digital keepsake, made with so much love just for you.</p>
+
+    <section class="book-scene" aria-label="Interactive birthday greeting book">
+      <div class="book" id="birthdayBook">
+        <div class="book-back"></div>
+        <div class="book-pages">
+          <article class="page page-left">
+            <div class="page-flower flower-left">✿</div>
+            <p class="small-label">A verse for you</p>
+            <div class="verse-mark">“</div>
+            <blockquote>
+              I have found the one whom my soul loves.
+            </blockquote>
+            <p class="verse-ref">Song of Solomon 3:4</p>
+            <div class="tiny-divider"><span>✿</span></div>
+            <p class="page-note">May your heart always remember how deeply you are loved.</p>
+          </article>
+
+          <article class="page page-right">
+            <div class="page-flower flower-right">✿</div>
+            <div class="photo-frame">
+              <img id="girlfriendPhoto" src="685f1a14-30f4-4bd1-8c72-1e260bb5fbc9.jpeg" alt="A favorite photo of you two"
+                onerror="this.style.display='none';document.getElementById('photoFallback').style.display='flex';">
+              <div id="photoFallback" class="photo-fallback">
+                <span class="photo-icon">♡</span>
+                <strong>Your favorite photo goes here</strong>
+                <small>Add your picture as <code>685f1a14-30f4-4bd1-8c72-1e260bb5fbc9.jpeg</code> beside index.html.</small>
+              </div>
+            </div>
+            <p class="photo-caption">my favorite smile, my favorite person</p>
+            <div class="mini-flower-row" aria-hidden="true">✿ ❀ ✿</div>
+          </article>
+        </div>
+
+        <button class="book-cover" id="bookCover" type="button" aria-label="Open the birthday book">
+          <div class="cover-border">
+            <div class="cover-flower top-flower">✿</div>
+            <p class="cover-kicker">A special birthday edition</p>
+            <div class="cover-title">To my<br><em>dearest love</em></div>
+            <div class="cover-peach" aria-hidden="true">
+              <span class="peach-leaf"></span><span class="peach-fruit"></span>
+              <span class="peach-blush"></span>
+            </div>
+            <p class="cover-subtitle">A heart full of wishes, hope &amp; love</p>
+            <div class="cover-flower bottom-flower">❀</div>
+            <span class="open-hint">TAP TO OPEN <span>↗</span></span>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button class="primary-button" id="openButton" type="button">Open your birthday letter <span>♡</span></button>
+      <p class="control-hint" id="controlHint">Turn the cover to discover your message.</p>
+    </div>
+
+    <section class="letter" id="letterMessage" aria-live="polite">
+      <p class="letter-kicker">MY BIRTHDAY WISH FOR YOU</p>
+      <h2>Happy Birthday, <span>my love!</span></h2>
+      <div class="ornament">✿ <span>♡</span> ✿</div>
+      <p>Today is a reminder of how beautiful it is that you were born. I hope this new chapter brings you gentle days, brave beginnings, answered prayers, and countless reasons to smile.</p>
+      <p>My love, never forget how capable and special you are. Even when life feels difficult or your dreams seem far away, keep believing in yourself. Take your time, keep learning, and celebrate every little step forward. You do not have to have everything figured out today. I believe in you, and I will always be cheering for your growth, your peace, and your happiness.</p>
+      <p>May God guide your decisions, protect your heart, strengthen you when you feel tired, and fill your life with wisdom and joy. May you keep becoming the person you dream of being, without ever forgetting the wonderful person you already are.</p>
+      <p>Thank you for being you—for your smile, your kindness, and the little things that make you unforgettable to me. I hope I can keep reminding you that you deserve patience, respect, laughter, and a love that encourages you to grow.</p>
+      <p class="closing">Happy birthday, sweetheart. Keep blooming, keep dreaming, and keep shining in your own beautiful way. <span>♡</span></p>
+      <p class="signature">With all my love, always</p>
+      <div class="signature-flower">❀</div>
+    </section>
+
+    <footer>Made with love, a little peach sweetness, and a garden of flowers.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
